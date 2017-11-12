@@ -1,8 +1,7 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <main class="container py-4">
     <router-view/>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -12,12 +11,16 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html, body {
+    background-color: #eeeeee;
+  }
+
+  .post img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fixed-nav {
+    top: 1rem;
+  }
 </style>
