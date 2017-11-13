@@ -1,7 +1,7 @@
 <template>
   <div v-if="author != null">
     <div class="row">
-      <div class="col-9 ml-auto">
+      <div class="col-12 col-lg-9 ml-auto">
         <div class="text-center mb-5">
           <img :src="author.avatar_urls[96]" class="border border-dark rounded-circle" alt>
           <h1 class="display-4">@{{ author.slug }}</h1>
@@ -10,7 +10,7 @@
     </div>
 
     <div class="row">
-      <div class="col-3">
+      <div class="col-12 col-lg-3 mb-3">
         <div class="nav flex-column nav-pills sticky-top fixed-nav">
           <router-link :to="{ name: 'home' }" class="nav-item nav-link">
             <i class="fa fa-home fa-fw"></i>
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="col-9">
+      <div class="col-12 col-lg-9">
         <section class="row">
           <div class="col-12 col-lg-8 mx-auto">
             <div v-if="posts != null">

@@ -1,16 +1,20 @@
 <template>
   <article class="row">
     <aside class="col-lg-2">
-      <div class="nav flex-column nav-pills sticky-top fixed-nav">
+      <div class="nav flex-lg-column nav-pills sticky-top fixed-nav mb-3">
         <router-link :to="{ name: 'home' }" class="nav-item nav-link">
           <i class="fa fa-home fa-fw"></i>
           Go to home
         </router-link>
+        <a class="d-block d-lg-none nav-item nav-link" href="#comments">
+          <i class="fa fa-comments fa-fw"></i>
+          Comments
+        </a>
       </div>
     </aside>
 
     <div class="col-12 col-lg-6 mr-auto">
-      <div v-if="post" class="card post">
+      <div v-if="post" class="card post mb-3 mb-lg-0">
         <div class="card-body">
           <h4 class="card-title">
             {{ post.title.rendered }}
@@ -28,7 +32,11 @@
 
     <div class="col-12 col-lg-4 ml-auto">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body" id="comments">
+          <p class="lead text-center">
+            <i class="fa fa-comments fa-fw"></i>
+            Comments
+          </p>
           <post-comments v-if="comments != null" :comments="comments"></post-comments>
         </div>
       </div>
