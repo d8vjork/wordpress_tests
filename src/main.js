@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 
 import axios from 'axios'
+import lodash from 'lodash'
 Vue.prototype.$http = axios.create({baseURL: process.env.BASE_URL})
+Vue.prototype._ = lodash
 
 Vue.config.productionTip = false
 

@@ -1,6 +1,12 @@
-# wordpress_tests
+# wordpress tests
 
 > Testing Wordpress full-JS (in-browser) templates
+
+## Backend side (WordPress)
+
+You need [WP API Menus](https://wordpress.org/plugins/wp-api-menus/) plugin for extend WP API.
+
+Need help with it? [Check WP API official documentation](https://developer.wordpress.org/rest-api/).
 
 ## Build Setup
 

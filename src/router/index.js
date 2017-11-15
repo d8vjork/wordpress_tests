@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 // Pages
 import HomePage from '@/pages/HomePage'
+import SinglePage from '@/pages/SinglePage'
 import SinglePostPage from '@/pages/SinglePostPage'
 import SingleUserPage from '@/pages/SingleUserPage'
 
@@ -21,6 +22,11 @@ export default new Router({
       path: '/post/:id',
       name: 'posts.single',
       component: SinglePostPage
+    },
+    {
+      path: '/page/:id',
+      name: 'pages.single',
+      component: SinglePage
     },
     {
       path: '/author/:id',
